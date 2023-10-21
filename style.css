@@ -6,13 +6,9 @@
     
 }
 body, html {
-    height: 100%;
-    background-image: url("bgimage.jpg");
-  
-   
-    height: 100%;
-  
     
+    background-image: url("bgimage.jpg");
+    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -25,9 +21,51 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 100px;
 }
 .calculator{
-   background-color: blueviolet; 
+   background-color: #523052; 
    padding: 20px;
    border-radius: 10px;
+   
+}
+
+.calculator form input{
+    border: 0;
+    outline: o;
+    height: 60px;
+    width: 60px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255,0.1),5px 5px 15px rgba(0, 0, 0, 0.2);
+    background: transparent;
+    font-size: 30px;
+    color: pink;
+    cursor: pointer;
+    margin: 10px;
+}
+form .display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+form .display input{
+    text-align: right;
+    flex: 1px;
+    font-size: 45px;
+    box-shadow: none;
+}
+form input.equal{
+    width: 145px;
+}
+form input.operator{
+    color:aqua ;
+}
+h1{
+    text-align: center;
+    font-family: Serif;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 0px;
 }
